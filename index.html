@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+         </script>
+         <script>
+            $(document).ready(function(){
+              $ ("main").load("page1.html");
+              $("#page1").click(function(){$("main").load("page1.html");});
+              $("#page2").click(function(){$("main").load("page2.html");});
+              $("#page3").click(function(){$("main").load("page3(formulaire).html");});
+              
+              
+            });
+            </script>
+            <link rel="stylesheet"  href="style.css" type="text/css"  media="screen" />
+
+        <meta charset="UTF-8" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Only Cars</title>
+    </head>
+    <body>
+        <div class="body">
+        <header >
+            <h1>Only~Cars</h1>
+            <p>Pour les passionn&eacute;s de voitures&nbsp;, ensemble sur la route&nbsp;.</p>
+        </header>
+        <nav>
+            <ol>
+             <li>  <a id="page1" href="#">Nous</a></li> 
+             <li>    <a id="page2" href="#">Mix</a></li> 
+             <li>  <a id="page3" href="#">partager</a></li> 
+            </ol>
+        </nav>
+        <main></main>
+        <footer><em>Projet web L1 Info</em></footer>
+    </div>
+    </body>
+
+</html>
